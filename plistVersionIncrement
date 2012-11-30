@@ -1,0 +1,47 @@
+#!/bin/bash
+# Auto Increment Version Script for iPhone & iPad applications
+# 
+
+PROJECTMAIN=$(pwd)
+PROJECT_NAME=$(basename "${PROJECTMAIN}")
+SETTINGS_PLIST="Settings.bundle/Root.plist"
+#
+if [[ -f "${PROJECTMAIN}/Resources/${PROJECT_NAME}-Info.plist" ]]
+then
+	buildPlist="${PROJECTMAIN}/Resources/${PROJECT_NAME}-Info.plist"
+elif [[ -f "${PROJECTMAIN}/${PROJECT_NAME}-Info.plist" ]]
+then
+	buildPlist="${PROJECTMAIN}/${PROJECT_NAME}-Info.plist"
+else
+	echo -e "Can't find the plist: ${PROJECT_NAME}-Info.plist"
+	exit 1
+fi
+#
+
+
+
+if [[ -f "${PROJECTMAIN}/Resources/${SETTINGS_PLIST}" ]]
+then
+        settingsPlist="${PROJECTMAIN}/Resources/${SETTINGS_PLIST}"
+elif [[ -f "${PROJECTMAIN}/${SETTINGS_PLIST}" ]]
+then
+        settingsPlist="${PROJECTMAIN}/${SETTINGS_PLIST}"
+else
+        echo -e "Can't find the plist: ${SETTINGS_PLIST}"
+        exit 1
+fi
+ 
+# Get the existing buildVersion and buildNumber values from the buildPlist
+buildVersion=$(/usr/libexec/PlistBuddy -c "Print CFBuildVersion" $buildPlist)
+buildNumber=$(/usr/libexec/PlistBuddy -c "Print CFBuildNumber" $buildPlist)
+ 
+# Increment the buildNumber
+buildNumber=$(($buildNumber + 1))
+ 
+# Set the version numbers in the buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBuildNumber $buildNumber" $buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildVersion.$buildNumber" $buildPlist
+/usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $buildVersion.$buildNumber" $buildPlist
+ 
+# Set the version numbers in the settingsPlist (Your path to the key you store your version number may vary, mine is in item 0)
+/usr/libexec/PlistBuddy -c "Set :PreferenceSpecifiers:1:DefaultValue $buildVersion.$buildNumber" $settingsPlist
