@@ -46,6 +46,8 @@
 	//[self test];
     // Add the split view controller's view to the window and display.
     [window addSubview:splitViewController.view];
+    [self.window setRootViewController:splitViewController];
+
     [window makeKeyAndVisible];
 	
 	rootViewController.baseDetailVC = baseDetailVC;

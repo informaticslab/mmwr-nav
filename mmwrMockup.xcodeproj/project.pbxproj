@@ -284,45 +284,45 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A6797F8A15780A37007E2A45 /* Icon-Small.png */,
-				A6797F8B15780A37007E2A45 /* Icon-Small@2x.png */,
 				A6797F8C15780A37007E2A45 /* iTunesArtwork */,
 				A6797F8D15780A37007E2A45 /* iTunesArtwork@2x */,
-				AC98BFCF13BA689B00D9E60D /* Icon-72.png */,
-				37365F71120C707600456D8B /* TranslatePopover.xib */,
-				3790696811FF34BB009C60D5 /* 2010-07-vitalsigns.pdf */,
+				37F5888111DD1375000D9140 /* WeeklyCurrentVolume.html */,
 				3765967811EF289E002CF1DB /* mmwrIcon.jpg */,
-				37774F7711EDF76000CE6F1A /* BaseDetailView.xib */,
-				37365F1E120C538B00456D8B /* ComingSoon.xib */,
+				3790696811FF34BB009C60D5 /* 2010-07-vitalsigns.pdf */,
 				377CC436120881EC00D19436 /* demopage.pdf */,
-				3765966411EF2699002CF1DB /* DetailHomeView.xib */,
-				37365F18120C4FF900456D8B /* fig1.png */,
-				37365F29120C543600456D8B /* FutureFeature.xib */,
-				374E5B0511F46748006513F8 /* HelpModalView.xib */,
 				377CC43F1208886300D19436 /* helppage.pdf */,
-				37972FB611E3AE25009F0B18 /* IssueDetailModalView.xib */,
-				37992D2811E4FB4200A35632 /* IssueTableView.xib */,
-				375FA818120A169600626F5B /* IssueTableView_Landscape.xib */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				37F467941200C2400008926F /* mmwr1_070810_transcript.pdf */,
 				37F467561200BA830008926F /* mmwr1_071510_transcript.pdf */,
 				37F467581200BAC40008926F /* mmwr1_072210_transcript.pdf */,
 				37F467951200C2400008926F /* mmwr5_070810_transcript.pdf */,
 				37F467851200C0540008926F /* mmwr5_071510_transcript.pdf */,
 				37F467641200BBB80008926F /* mmwr5_072210_transcript.pdf */,
-				8D1107310486CEB800E47090 /* mmwrMockup-Info.plist */,
 				37906A9311FF7AD9009C60D5 /* rr5901.pdf */,
 				37906A9411FF7AD9009C60D5 /* rr5902.pdf */,
 				37906A9511FF7AD9009C60D5 /* rr5903.pdf */,
 				37906A9611FF7AD9009C60D5 /* rr5904.pdf */,
 				37906A9711FF7AD9009C60D5 /* rr5905.pdf */,
 				37906A9811FF7AD9009C60D5 /* rr5906.pdf */,
+				37BDE55511FFDD1D0068CF5D /* ss5906.pdf */,
+				37BDE54A11FFC4C30068CF5D /* ss5907.pdf */,
+				8D1107310486CEB800E47090 /* mmwrMockup-Info.plist */,
+				37365F18120C4FF900456D8B /* fig1.png */,
+				AC98BFCF13BA689B00D9E60D /* Icon-72.png */,
+				A6797F8A15780A37007E2A45 /* Icon-Small.png */,
+				A6797F8B15780A37007E2A45 /* Icon-Small@2x.png */,
+				37774F7711EDF76000CE6F1A /* BaseDetailView.xib */,
+				37365F1E120C538B00456D8B /* ComingSoon.xib */,
+				3765966411EF2699002CF1DB /* DetailHomeView.xib */,
+				37365F29120C543600456D8B /* FutureFeature.xib */,
+				374E5B0511F46748006513F8 /* HelpModalView.xib */,
+				37972FB611E3AE25009F0B18 /* IssueDetailModalView.xib */,
+				37992D2811E4FB4200A35632 /* IssueTableView.xib */,
+				375FA818120A169600626F5B /* IssueTableView_Landscape.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				37C888C812085AFD00DFA618 /* SearchPopover.xib */,
 				37E0330A11F4C3B100C4E353 /* SettingsModalView.xib */,
 				37F467A91200D1980008926F /* SettingsPopoverView.xib */,
-				37BDE55511FFDD1D0068CF5D /* ss5906.pdf */,
-				37BDE54A11FFC4C30068CF5D /* ss5907.pdf */,
-				37F5888111DD1375000D9140 /* WeeklyCurrentVolume.html */,
+				37365F71120C707600456D8B /* TranslatePopover.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -364,6 +364,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = Z827RBGAJC;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "mmwrMockup" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -477,6 +482,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -487,6 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				New_Setting = "";
 				PRODUCT_NAME = "mmwr-navigator";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -495,6 +503,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mmwrMockup_Prefix.pch;
@@ -503,6 +513,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				New_Setting = "";
 				PRODUCT_NAME = "mmwr-navigator";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;

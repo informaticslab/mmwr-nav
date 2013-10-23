@@ -93,6 +93,8 @@
 
     // Configure the cell.
 	cell.textLabel.textColor = [UIColor whiteColor]; // one of the standard colors
+    //cell.backgroundColor = [UIColor blueColor];
+	cell.backgroundColor = [UIColor colorWithRed:59/255.0 green:89/255.0 blue:152.0/255.0 alpha:1.0];
 	cell.textLabel.font = [UIFont boldSystemFontOfSize:18];
 
 }
@@ -100,11 +102,18 @@
 #pragma mark -
 #pragma mark Rotation support
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	DebugLog(@" answer is yes");
-    return YES;
-	
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+//	DebugLog(@" answer is yes");
+//    return YES;
+//	
+//}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
 }
+
+
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
 	DebugLog(@"received didRotate.");	

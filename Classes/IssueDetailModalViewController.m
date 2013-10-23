@@ -83,8 +83,8 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webview {
 
-	LoadingView *loadingView = [LoadingView loadingViewInView:self.webView];
-	[loadingView performSelector:@selector(removeView) withObject:nil afterDelay:2.0];
+//	LoadingView *loadingView = [LoadingView loadingViewInView:self.webView];
+//	[loadingView performSelector:@selector(removeView) withObject:nil afterDelay:2.0];
 	
 	
 }

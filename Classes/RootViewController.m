@@ -131,9 +131,14 @@ NSArray * pubs;
 #pragma mark -
 #pragma mark Rotation support
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	DebugLog(@" answer is yes");
-    return YES;
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+//	DebugLog(@" answer is yes");
+//    return YES;
+//}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
 }
 
 
