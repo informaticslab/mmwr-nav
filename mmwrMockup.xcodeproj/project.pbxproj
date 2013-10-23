@@ -494,7 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				New_Setting = "";
 				PRODUCT_NAME = "mmwr-navigator";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1D6A5D4B-3678-46B3-A793-5C4565350D05";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -503,8 +503,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mmwrMockup_Prefix.pch;
@@ -513,7 +513,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				New_Setting = "";
 				PRODUCT_NAME = "mmwr-navigator";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1AF4528A-9381-43C4-953D-A353BE0A07CC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;

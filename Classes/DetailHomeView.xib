@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1072" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailHomeView">
@@ -35,7 +35,7 @@ Welcome!  This prototype is a high-fidelity simulation of a potential production
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <string key="text">About the Informatics R&amp;D Unit:
 
-IRDU is a resource to the CDC and the public health community that studies, prototypes, and tests new and innovative technology-based tools and resources to maximize programmatic public health impact.  The valuable insights gained through our hypotheses testing and prototype development will be shared with the public health community via meetings, presentations, newsletters, peer-reviewed publications, prototype tools, and web-based media. (Ver 0.8.1.002)
+IRDU is a resource to the CDC and the public health community that studies, prototypes, and tests new and innovative technology-based tools and resources to maximize programmatic public health impact.  The valuable insights gained through our hypotheses testing and prototype development will be shared with the public health community via meetings, presentations, newsletters, peer-reviewed publications, prototype tools, and web-based media. (Ver 0.8.9.001 10/23/13)
 </string>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
