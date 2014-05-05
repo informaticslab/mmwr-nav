@@ -66,7 +66,9 @@ NSArray * pubs;
 
 - (void)viewWillAppear:(BOOL)animated {
 	
-    [self presentEulaModalView];
+    // The EULA is not correctly displayed in iOS 7 but since this app is so old and likely never to used except
+    // for the occassional demo, it will be comment out and never displayed
+    //  [self presentEulaModalView];
 	[self.baseDetailVC showHomeContentView];
 
 	
