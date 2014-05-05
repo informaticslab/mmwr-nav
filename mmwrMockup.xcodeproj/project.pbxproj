@@ -491,7 +491,7 @@
 				GCC_PREFIX_HEADER = mmwrMockup_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "mmwrMockup-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				New_Setting = "";
 				PRODUCT_NAME = "mmwr-navigator";
 				PROVISIONING_PROFILE = "";
@@ -510,7 +510,7 @@
 				GCC_PREFIX_HEADER = mmwrMockup_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "mmwrMockup-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				New_Setting = "";
 				PRODUCT_NAME = "mmwr-navigator";
 				PROVISIONING_PROFILE = "";
